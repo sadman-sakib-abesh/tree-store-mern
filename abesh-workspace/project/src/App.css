@@ -1,0 +1,210 @@
+body{
+  background-image: url('https://raw.githubusercontent.com/sadman-sakib-abesh/images/main/back.png');
+  
+}
+#header{
+  background-color:black;
+  width: 100%;
+  height: 38px;
+  opacity: 0.4;
+ 
+  z-index: 9999;
+  color: white;
+ font-size: 20px;
+ position: fixed;
+}
+#i{
+  font-size:large;
+  float:right ;
+}
+
+#mid-card{
+  left: 12px;
+  background-color: white;
+  width:95%;
+  z-index: 99992;
+  height: 500px;
+  opacity: 0.9;
+  top:12px;
+  
+  box-shadow:0 4px 8px 1px gray;
+}
+#header-2{
+  background-color:rgb(58, 139, 58);
+  width: 100%;
+  height: 38px;
+  z-index: 99991;
+ font-size: 20px;
+ box-shadow:0 4px 8px 1px gray;
+ text-align: right;
+ position:sticky;
+ top:0;
+}
+
+
+#grid-d{
+  background-color:mediumseagreen;
+  opacity: 0.7;
+  width: 5px;
+  height:100%;
+  position: fixed;
+  left: 5px;
+
+}
+#grid-c{
+  background-color:rgb(8, 10, 9);
+  opacity: 0.7;
+  width: 2px;
+  height:100%;
+  position: fixed;
+  left: 20px;
+
+}
+#confirm{
+  background-color:rgb(221, 103, 103) ;
+  color:azure;
+  border-bottom-right-radius:25px ;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 25px;
+
+}
+#price{
+color: rgb(32, 90, 32);
+text-align: center;
+
+}
+#product{
+  border: 2px solid rgb(75, 179, 101);
+
+  margin:5px;
+}
+#router-container{
+  padding: 30px;
+}
+#caption{
+  font-size:20px ;
+  margin-top: opx;
+}
+
+.btn-a{
+    background-color: lightgreen;
+    border:0px;
+    font-size: 20px;
+    border-radius:5px;
+}
+#cart{
+  
+font-size: 30px;
+  opacity: 1;
+  color: rgb(188, 202, 188);
+}
+.btn-d{
+  background-color: rgb(241, 113, 113);
+  border:0px;
+  font-size: 20px;
+  border-radius:5px;
+}
+
+.footer{
+    width:100%;
+    height: 100px;
+    background-color: #c0c0c0;
+    color:gray;
+}
+
+
+@media only screen and (min-width: 601px) {
+  
+
+.row {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  padding-left: 30px;
+}
+.column{
+  border-bottom:20px solid lightgreen;
+  background-color:rgb(255, 255, 255);
+  width: 300px;
+  height:400px;
+  box-shadow:0 1px 8px 4px rgb(180, 177, 177);
+  border-radius:10px;
+  margin: 20px;
+  font-size: 20px;
+  overflow-y: scroll;
+  
+  
+}
+
+.card-admin{
+  border-bottom:20px solid lightgreen;
+  background-color:rgb(255, 255, 255);
+    width: 95%;
+    height:500px;
+    box-shadow:0 1px 8px 4px rgb(180, 177, 177);
+    border-radius:10px;
+    margin: 50px;
+    font-size: 20px;
+    overflow-y:scroll;
+}
+
+#in{
+  border-top:0px;
+  border-left: 0px;
+  border-bottom:2px solid black;
+  border-right: 0px;
+  width: 80%;
+  font-size: 30px;
+  
+  
+  }
+  
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display:grid;
+   padding-left: 30px;
+  }#in{
+    border-top:0px;
+    border-left: 0px;
+    border-bottom:2px solid black;
+    border-right: 0px;
+    width: 80%;
+
+    
+    
+    }
+    
+
+
+
+  .column{
+    border-bottom:20px solid lightgreen;
+    background-color:rgb(255, 255, 255);
+    width: 300px;
+    height:400px;
+    box-shadow:0 1px 8px 4px rgb(180, 177, 177);
+    border-radius:10px;
+    font-size: 30px;
+  
+    margin: 10px;
+  }
+
+
+  .card-admin{
+    border-bottom:20px solid lightgreen;
+    background-color:rgb(255, 255, 255);
+      width:90%;
+      height:300px;
+      box-shadow:0 1px 8px 4px rgb(180, 177, 177);
+      border-radius:10px;
+      margin: 10px;
+      font-size: 20px;
+      overflow-y: scroll;
+  }
+  
+}
