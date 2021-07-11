@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
   const {MongoClient,ObjectId}=require("mongodb");
-  const url='mongodb://admin_Abesh:PlGWD1AsxDkSvF18@cluster0-shard-00-00.fpqk3.mongodb.net:27017,cluster0-shard-00-01.fpqk3.mongodb.net:27017,cluster0-shard-00-02.fpqk3.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-15fdo3-shard-0&authSource=admin&retryWrites=true&w=majority'
+  const url='env'
 
   MongoClient.connect(url,{ useUnifiedTopology: true },(error,db)=>{
   
@@ -114,14 +114,14 @@ app.post('/api/mail',(req,res)=>{
     port: 465,
     secure: true,
     auth: {
-      user:'noreply.businesspoint@gmail.com' ,
-      pass:'20_21<point>'
+      user: ,
+      pass:
     }
   });
   
   var mailOptions = {
-    from: 'noreply.businesspoint@gmail.com',
-    to: 'sadmansakibabesh@gmail.com',
+    from:,
+    to:,
     subject:'tree order',
     html:'you got an sell order,<br/>products list-'+req.body.product+'<br/>buyers name-'+req.body.name+'<br/>phone-'+req.body.phone+'<br/>address-'+req.body.address+'<br/>total-'+req.body.total
   };
